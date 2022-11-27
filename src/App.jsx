@@ -13,8 +13,7 @@ const App = () => {
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* path="*" permet de renvoyé vers la page 404 ou vers une page prédéfinit
-      si l'utilisateur se "perd" */}
+        {/* path="*" permet de renvoyé vers la page 404 ou vers une page prédéfinit si l'utilisateur se trompe de lien */}
         <Route path="*" element={<Error />} />
         <Route path="/about" element={<About />} />
         <Route path="products/:productId" element={<Singleproduct />} />

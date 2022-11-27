@@ -1,4 +1,5 @@
 import React from "react";
+import chevron from "../assets/images/arrow.png";
 
 const Collapse = ({ title, content}) => {
     const isCollapse = (e) => {
@@ -20,7 +21,7 @@ const Collapse = ({ title, content}) => {
             <button type="button" className="collapse__button" onClick={isCollapse}>
                 {title}
 
-                <p ClassName="collapse__arrow"> &lt; </p>       {/* &lt correspond au signe "<" [Problème de syntaxe en utilisant le signe] */}
+                <img src={chevron} alt="Déployer" />
             </button>
             <div className="collapse__content">
         {Array.isArray(content) ? (
