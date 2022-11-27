@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-//Style
+
 import arrowLeft from "../assets/images/arrowLeft.svg";
 import arrowRight from "../assets/images/arrowRight.svg";
 
@@ -35,7 +35,7 @@ const Slider = ({ slides }) => {
           </div>
         );
       })}
-      {/* get button if there are more thant one picture */}
+      {/* Si nombre de photo > 1 = Un bouton pour défiler */}
       {length > 1 ? (
         <>
           <div className="slider__previous" onClick={prevSlide}>

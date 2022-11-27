@@ -6,10 +6,17 @@ import Host from "../components/Host";
 import Slider from "../components/Slider";
 import Tags from "../components/Tags";
 import Collapse from "../components/Collapse";
+import Error from "../pages/Error";
+
 
 const SingleProduct = () => {
   const { productId } = useParams();
   const product = products.find((product) => product.id === productId);
+
+  if(!product) {                
+    return <Error/>
+  }
+
   const { title, location, rating, host, equipments, description, pictures } =
     product;
 

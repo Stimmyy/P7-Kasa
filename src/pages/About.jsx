@@ -12,7 +12,7 @@ const About = () => {
           return aboutData.respect;
         case "service":
           return aboutData.service;
-        case "sécurity":
+        case "security":
           return aboutData.security;
         default:
           console.log("default");
@@ -28,7 +28,7 @@ return (
                 <Collapse title="Fiabilité" content={content("fiability")} />
                 <Collapse title="Respect" content={content("respect")} />
                 <Collapse title="Service" content={content("service")} />
-                <Collapse title="Sécurité" content={content("sécurity")} />
+                <Collapse title="Sécurité" content={content("security")} />
             </div>
         </section>
     </main>
