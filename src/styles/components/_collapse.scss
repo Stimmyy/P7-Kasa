@@ -66,25 +66,25 @@
   }
   &__text {
     margin: 0;
-    font-size: 12px;
+    font-size: 14px;
     @include media-query(medium) {
-      font-size: 14px;
+      font-size: 16px;
     }
     @include media-query(large) {
-      font-size: 18px;
+      font-size: 20px;
     }
   }
   &__list {
     list-style: none;
     padding: 0;
     margin: 0;
-    font-size: 12px;
+    font-size: 14px;
 
     @include media-query(medium) {
-      font-size: 14px;
+      font-size: 16px;
     }
     @include media-query(large) {
-      font-size: 18px;
+      font-size: 20px;
     }
   }
   &__list-element {
