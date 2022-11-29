@@ -19,18 +19,28 @@
     justify-items: center;
     align-self: center;
     font-size: 50px;
-    font-weight: 300;
+    font-weight: 400;
     padding: 20%;
     color: $color-2;
     box-sizing: inherit;
-    @include media-query(small) {
-      padding: 5%;
-      font-size: 24px;
+
+    @include media-query (small) {
+      font-size:45px;
+      padding:1%;
+      padding-left:3%;
+      width:54%;
     }
+
+    @include media-query(medium){
+      width:100%;
+    }
+
     @include media-query(large) {
       padding: 20%;
       font-size: 50px;
     }
+
+    
   }
 
   &__overlay {

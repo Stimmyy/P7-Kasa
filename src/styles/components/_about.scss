@@ -1,6 +1,10 @@
 .about {
   margin: 0 5%;
 
+  @media screen and (max-width: 992px){
+    margin:0;
+  }
+
   &__dropdowns {
     width: 100%;
 

@@ -22,8 +22,8 @@ const About = () => {
 
 return (
     <main className="main">
+      <Banner image={imageBanner} />
         <section className="about">
-            <Banner image={imageBanner} />
             <div className="about__dropdowns">
                 <Collapse title="Fiabilité" content={content("fiability")} />
                 <Collapse title="Respect" content={content("respect")} />

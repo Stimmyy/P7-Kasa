@@ -3,8 +3,12 @@
   position: relative;
   margin: 20px 0;
   height: 111px;
+
+  @include media-query(small){
+    height:300px;
+  }
   @include media-query(medium) {
-    height: 167px;
+    height: 265px;
   }
   @include media-query(large) {
     height: 223px;

@@ -14,27 +14,27 @@
 
   .errorText {
     text-align: center;
-    font-weight:500;
+    font-weight:400;
     font-size: 36px;
     color: $color-1;
     margin-bottom: 142px;
   }
   .errorBackLink {
+    text-decoration:underline;
     font-size: 20px;
     color: $color-1;
     margin: 42px;
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   .errorNumber {
     width: 198px;
     height: 99px;
   }
   .errorText {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 133px;
-    width: 260px;
     height: 52px;
   }
   .errorBackLink {
