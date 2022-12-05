@@ -4,8 +4,8 @@ import chevron from "../assets/images/arrow.png";
 const Collapse = ({ title, content}) => {
     const isCollapse = (e) => {
         e.preventDefault();
-        const divText = e.target.nextSibling;
-        const arrow = e.target.lastChild;
+        const divText = e.currentTarget.nextSibling;
+        const arrow = e.currentTarget.lastChild;
 
         if (!divText.classList.contains("show")) {
             divText.classList.add("show");
